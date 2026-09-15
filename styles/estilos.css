@@ -1,0 +1,236 @@
+/* ==========================================================================
+   RESET & TIPOGRAFÍA GLOBAL
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+s
+body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    line-height: 1.7;
+    color: #000000;
+    /* Fondo gris medio para resaltar el contraste de los cuadros */
+    background-color: #cbd5e1;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   ENCABEZADO Y NAVEGACIÓN
+   ========================================================================== */
+header {
+    background: #0f172a;
+    color: #ffffff;
+    text-align: center;
+    padding: 4% 5% 3% 5%;
+    width: 100%;
+    border-bottom: 4px solid #6366f1;
+}
+
+header p:first-of-type {
+    font-size: 0.8em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #818cf8;
+    margin-bottom: 0.4em;
+}
+
+header h1 {
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 0.2em;
+    color: #f8fafc;
+}
+
+header p:last-of-type {
+    font-size: 1em;
+    color: #94a3b8;
+}
+
+nav {
+    background-color: #1e293b;
+    text-align: center;
+    padding: 1% 2%;
+    width: 100%;
+    margin-bottom: 1.5%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+    display: inline-block;
+    color: #f8fafc;
+    text-decoration: none;
+    padding: 0.5em 1.2em;
+    margin: 0.3em;
+    font-weight: 600;
+    font-size: 0.88em;
+    border-radius: 8px;
+    background-color: #334155;
+    border: 1px solid #475569;
+}
+
+nav a:hover {
+    background-color: #6366f1;
+    color: #ffffff;
+    border-color: #6366f1;
+}
+
+/* ==========================================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================================== */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2% auto;
+}
+
+/* ==========================================================================
+   ESTILO DE CUADRO / TARJETA PARA CADA SECCIÓN (section)
+   ========================================================================== */
+section {
+    background-color: #dedada;
+    padding: 4%;
+    margin-bottom: 3.5%;
+    /* Bordes y sombras para simular tarjetas elevadas */
+    border: 2px solid #94a3b8;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.15), 0 8px 10px -6px rgba(15, 23, 42, 0.08);
+}
+
+section h2 {
+    color: #0f172a;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 1.2em;
+    padding-bottom: 0.6em;
+    border-bottom: 3px solid #6366f1;
+    display: block;
+}
+
+article p {
+    margin-bottom: 1.2em;
+    text-align: justify;
+    font-size: 1.02em;
+    color: #334155;
+}
+
+/* ==========================================================================
+   CUADROS INTERNOS PARA LAS LISTAS (Ejes, Puntos y Conclusiones)
+   ========================================================================== */
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+ul li, ol li {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 5px solid #6366f1;
+    padding: 1.2em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    color: #334155;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+ol li {
+    border-left-color: #10b981;
+}
+
+/* ==========================================================================
+   CUADRO DEL VIDEO PODCAST
+   ========================================================================== */
+section div {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid #0f172a;
+    background-color: #000000;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ==========================================================================
+   GALERÍA COMPACTA 2x2 (2 Filas x 2 Columnas)
+   ========================================================================== */
+section#galeria figure {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;             /* 2 columnas iguales */
+    margin-right: 3.5%;     /* Espacio entre columna 1 y 2 */
+    margin-bottom: 3.5%;    /* Espacio entre fila 1 y 2 */
+    background-color: #ffffff;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* Quita el margen derecho a las imágenes de la 2ª columna */
+section#galeria figure:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+section#galeria img {
+    width: 100%;
+    height: 140px;           /* Altura compacta uniformada */
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+section#galeria figcaption {
+    padding: 3.5% 4.5%;
+    font-size: 0.82em;
+    color: #475569;
+    text-align: left;
+    background-color: #ffffff;
+    line-height: 1.35;
+}
+
+section#galeria figcaption strong {
+    color: #0f172a;
+    font-size: 0.95em;
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+/* ==========================================================================
+   CUADROS DE CITAS DESTACADAS
+   ========================================================================== */
+blockquote {
+    background-color: #f0f9ff;
+    border: 1px solid #bae6fd;
+    border-left: 6px solid #0284c7;
+    padding: 1.3em 1.5em;
+    margin-bottom: 1.2em;
+    border-radius: 10px;
+    font-style: italic;
+    color: #0369a1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+/* ==========================================================================
+   PIE DE PÁGINA
+   ========================================================================== */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 3% 5%;
+    width: 100%;
+    font-size: 0.9em;
+    margin-top: 4%;
+}
